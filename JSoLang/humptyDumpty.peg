@@ -6,7 +6,7 @@
 // Ejemplo 2: Reemplazo de Texto en CineCer0
 
 main = x:allRules* { return "##cineCer0\n" + x.join("") }
-allRules = a / wall / fall / sat / had / humpty / dumpty / Dumpty / first / then / on / anyCharacter
+allRules = a / wall / fall / grape / cake / sat / had / humpty / dumpty / Dumpty / first / then / on / anyCharacter
 anyCharacter = .
 
 a = "a"i { return "image" }
