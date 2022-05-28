@@ -10,13 +10,13 @@
 ##humptyDumpty
 first Humpty dumpty sat on a wall;
 then Humpty Dumpty had a fall;
-after Humpty dumpty ate rapidly a cake;
+after Humpty dumpty ate a cake;
 while Humpty Dumpty had a grape;
 
 */
 
 main = x:allRules* { return "##cineCer0\n" + x.join("") }
-allRules = a / wall / fall / grape / cake / rapidly / ate / after / while / sat / had / humpty / dumpty / Dumpty / first / then / on / anyCharacter
+allRules = a / wall / fall / grape / cake / ate / after / while / sat / had / humpty / dumpty / Dumpty / first / then / on / anyCharacter
 anyCharacter = .
 
 a = "a"i { return "image" }
