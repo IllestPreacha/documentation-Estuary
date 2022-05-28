@@ -13,8 +13,8 @@ a = "a"i { return "image" }
 
 wall = "wall"i { return "\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Denslow%27s_Humpty_Dumpty_pg_11.jpg/640px-Denslow%27s_Humpty_Dumpty_pg_11.jpg\"" }
 fall = "fall"i { return "\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Denslow%27s_Humpty_Dumpty_pg_9.jpg/640px-Denslow%27s_Humpty_Dumpty_pg_9.jpg\"" }
-grape = "grape"i { return "\"https://cdn.myportfolio.com/1558b05f-bc94-46d3-8caf-bebbeb965f41/bb37cf11-f5d0-4f19-bee4-737310f998ca_rw_600.jpeg?h=11053331765ac72dd65b61d58e554fb6"" }
-cake = "cake"i { return "\"https://cdn.myportfolio.com/1558b05f-bc94-46d3-8caf-bebbeb965f41/7c06b9d4-5d17-4ef0-8d29-167976f3b1b6_rw_600.jpeg?h=698f61de9c5598e29631263d511089fa"" }
+grape = "grape"i { return "\"https://cdn.myportfolio.com/1558b05f-bc94-46d3-8caf-bebbeb965f41/bb37cf11-f5d0-4f19-bee4-737310f998ca_rw_600.jpeg"" }
+cake = "cake"i { return "\"https://cdn.myportfolio.com/1558b05f-bc94-46d3-8caf-bebbeb965f41/7c06b9d4-5d17-4ef0-8d29-167976f3b1b6_rw_600.jpeg"" }
 
 sat = "sat"i { return "$" }
 had = "had"i { return "$" }
