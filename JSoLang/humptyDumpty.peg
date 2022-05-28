@@ -16,7 +16,7 @@ while Humpty Dumpty had a grape;
 */
 
 main = x:allRules* { return "##cineCer0\n" + x.join("") }
-allRules = a / wall / fall / grape / cake / rapidly / ate  / sat / had / humpty / dumpty / Dumpty / first / then / on / anyCharacter
+allRules = a / wall / fall / grape / cake / rapidly / ate / after / while / sat / had / humpty / dumpty / Dumpty / first / then / on / anyCharacter
 anyCharacter = .
 
 a = "a"i { return "image" }
