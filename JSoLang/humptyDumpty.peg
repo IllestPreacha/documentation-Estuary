@@ -39,7 +39,7 @@ then = "then"i { return "setPosY (-0.2) $" }
 
 after = "after"i { return "setPosY (-0.5) $" }
 while = "while"i { return "setPosY (-0.5) $" }
-rapidly = "rapidly"i { return "setPosX (-0.5) $" }
+//rapidly = "rapidly"i { return "setPosX (-0.5) $" }
 
 
 on = "on"i { return "" }
