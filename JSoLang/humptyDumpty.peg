@@ -5,24 +5,38 @@
 // Example 2: Text Replacement in CineCer0
 // Ejemplo 2: Reemplazo de Texto en CineCer0
 
+/* ##humptyDumpty
+
+first Humpty dumpty sat on a wall;
+then Humpty Dumpty had a fall;
+after Humpty dumpty ate a big cake;
+while Humpty Dumpty had a grape;
+
+*/
+
 main = x:allRules* { return "##cineCer0\n" + x.join("") }
-allRules = a / wall / fall / grape / cake / sat / had / humpty / dumpty / Dumpty / first / then / on / anyCharacter
+allRules = a / wall / fall / grape / cake / big / ate  / sat / had / humpty / dumpty / Dumpty / first / then / on / anyCharacter
 anyCharacter = .
 
 a = "a"i { return "image" }
 
 wall = "wall"i { return "\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Denslow%27s_Humpty_Dumpty_pg_11.jpg/640px-Denslow%27s_Humpty_Dumpty_pg_11.jpg\"" }
 fall = "fall"i { return "\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Denslow%27s_Humpty_Dumpty_pg_9.jpg/640px-Denslow%27s_Humpty_Dumpty_pg_9.jpg\"" }
-grape = "grape"i { return "\"https://upload.wikimedia.org/wikipedia/commons/6/6c/Abhar-iran.jpg\"" }
+grape = "grape"i { return "\"https://upload.wikimedia.org/wikipedia/commons/6/6c/Abhar-iran.JPG\"" }
 cake = "cake"i { return "\"https://upload.wikimedia.org/wikipedia/commons/0/04/Pound_layer_cake.jpg\"" }
 
 sat = "sat"i { return "$" }
 had = "had"i { return "$" }
+ate = "ate"i { return "$" }
+
 
 humpty = "humpty"i { return "setSize 0.5" }
 dumpty = "dumpty" { return "$ setOpacity (range 0 1 $ sin 0.5)" }
 Dumpty = "Dumpty" { return "$ setOpacity (range 1 0 $ sin 0.5)" }
 first = "first"i { return "setPosY (-0.2) $" }
 then = "then"i { return "setPosY (-0.2) $" }
+
+after = "after"i { return "setPosY (-0.5) $" }
+while = "while"i { return "setPosY (-0.5) $" }
 
 on = "on"i { return "" }
