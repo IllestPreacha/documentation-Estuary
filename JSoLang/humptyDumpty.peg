@@ -43,13 +43,13 @@ sumpty = "sumpty"i { return "setSize 0.5" }
 // ate to drank
 
 
-dumpty = "dumpty" { return "$ setOpacity (range 0 1 $ sin 0.5)" }
-Dumpty = "Dumpty" { return "$ setOpacity (range 1 0 $ sin 0.5)" }
+dumpty = "dumpty" { return "$ setOpacity (range 0 1 $ sin 0.32)" }
+Dumpty = "Dumpty" { return "$ setOpacity (range 1 0 $ sin 0.39)" }
 first = "first"i { return "setPosY (-0.2) $" }
 then = "then"i { return "setPosY (-0.2) $" }
 
-before = "before"i { return "setPosY (range 0 1 $ sin 0.5) $" }
-while = "while"i { return "setPosY (range 1 0 $ sin 0.5) $" }
+before = "before"i { return "setPosY (range 0 1 $ sin 0.23) $" }
+while = "while"i { return "setPosY (range 1 0 $ sin 0.25) $" }
 rapidly = "rapidly"i { return "setPosX (range 1 0 $ sin 0.21)  $" }
 
 
