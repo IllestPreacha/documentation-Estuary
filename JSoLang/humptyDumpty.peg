@@ -60,7 +60,16 @@ rapidly = "rapidly"i { return "setPosX (range 1 0 $ sin 0.21)  $" }
 
 on = "on"i { return "" }
 
-// Example 1 & 2
+// Example 1, 2 ,3 
+
+/*
+##humptyDumptyRemix1
+
+while rapidly Humpty had a fall;
+before  crumpty dumpty had a grape;
+then sumpty sat on a  cake;
+
+*/
 
 /*
 ##humptyDumptyRemix1
