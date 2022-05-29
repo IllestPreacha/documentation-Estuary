@@ -50,7 +50,7 @@ then = "then"i { return "setPosY (-0.2) $" }
 
 before = "before"i { return "setPosY (range 0 1 $ sin 0.5) $" }
 while = "while"i { return "setPosY (range 1 0 $ sin 0.5) $" }
-rapidly = "rapidly"i { return "setPosX (range 1 0 $ sin 0.5)  $" }
+rapidly = "rapidly"i { return "setPosX (range 1 0 $ sin 0.21)  $" }
 
 
 on = "on"i { return "" }
