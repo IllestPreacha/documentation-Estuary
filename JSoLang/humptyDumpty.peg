@@ -31,7 +31,7 @@ had = "had"i { return "$" }
 ate = "ate"i { return "$" }
 
 
-humpty = "humpty"i { return "setSize (range 0 1 $ cos 3.5)" }
+humpty = "humpty"i { return "setSize 3.5" }
 dumpty = "dumpty" { return "$ setOpacity (range 0 1 $ sin 0.5)" }
 Dumpty = "Dumpty" { return "$ setOpacity (range 1 0 $ cos 0.5)" }
 first = "first"i { return "setPosY (-0.2) $" }
