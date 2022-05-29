@@ -16,7 +16,7 @@ while Humpty Dumpty had a grape;
 */
 
 main = x:allRules* { return "##cineCer0\n" + x.join("") }
-allRules = a / wall / fall / grape / cake / ate / while / sat / had / humpty / crumpty / sumpty / rapidly /  dumpty / Dumpty / first / then / on / anyCharacter
+allRules = a / wall / before / fall / grape / cake / drank / while / sat / had / humpty / crumpty / sumpty / rapidly /  dumpty / Dumpty / first / then / on / anyCharacter
 anyCharacter = .
 
 a = "a"i { return "image" }
@@ -28,12 +28,19 @@ cake = "cake"i { return "\"https://upload.wikimedia.org/wikipedia/commons/0/04/P
 
 sat = "sat"i { return "$" }
 had = "had"i { return "$" }
-ate = "ate"i { return "$" }
+drank = "drank"i { return "$" }
 
 
 humpty = "humpty"i { return "setSize 2.5" }
 crumpty = "crumpty"i { return "setSize 1.5" }
-sumpty = "crumpty"i { return "setSize 0.5" }
+sumpty = "sumpty"i { return "setSize 0.5" }
+
+//ate, after not working but now I realize it could be the case of the later a 
+
+/* To showcase this, will alter the following variables */
+
+// changing after to before
+// ate to drank
 
 
 dumpty = "dumpty" { return "$ setOpacity (range 0 1 $ sin 0.5)" }
@@ -41,7 +48,7 @@ Dumpty = "Dumpty" { return "$ setOpacity (range 1 0 $ sin 0.5)" }
 first = "first"i { return "setPosY (-0.2) $" }
 then = "then"i { return "setPosY (-0.2) $" }
 
-after = "after"i { return "setPosY (range 0 1 $ sin 0.5) $" }
+before = "before"i { return "setPosY (range 0 1 $ sin 0.5) $" }
 while = "while"i { return "setPosY (range 1 0 $ sin 0.5) $" }
 rapidly = "rapidly"i { return "setPosX (-0.5) $" }
 
