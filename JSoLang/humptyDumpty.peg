@@ -54,3 +54,28 @@ rapidly = "rapidly"i { return "setPosX (range 1 0 $ sin 0.21)  $" }
 
 
 on = "on"i { return "" }
+
+// Example 1 & 2
+
+/*
+##humptyDumptyRemix1
+
+while crumpty dumpty sat on a wall;
+while Humpty Dumpty had a grape;
+before crumpty dumpty had a cake;
+then sumpty dumpty drank a grape;
+rapidly Humpty Dumpty had a fall;
+*/
+
+
+/*
+
+##humptyDumptyRemix1
+
+while crumpty dumpty sat on a wall;
+while  rapidly Humpty Dumpty had a grape;
+before crumpty dumpty had a cake;
+then rapidly sumpty dumpty drank a grape;
+rapidly Humpty Dumpty had a fall;
+
+*/
