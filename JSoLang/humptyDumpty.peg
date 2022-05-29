@@ -16,7 +16,7 @@ while Humpty Dumpty had a grape;
 */
 
 main = x:allRules* { return "##cineCer0\n" + x.join("") }
-allRules = a / wall / fall / grape / cake / ate / after / while / sat / had / humpty / dumpty / Dumpty / first / then / on / anyCharacter
+allRules = a / wall / fall / grape / cake / ate / while / sat / had / humpty / rapidly /  dumpty / Dumpty / first / then / on / anyCharacter
 anyCharacter = .
 
 a = "a"i { return "image" }
@@ -31,15 +31,15 @@ had = "had"i { return "$" }
 ate = "ate"i { return "$" }
 
 
-humpty = "humpty"i { return "setSize 3.5" }
+humpty = "humpty"i { return "setSize 2.5" }
 dumpty = "dumpty" { return "$ setOpacity (range 0 1 $ sin 0.5)" }
-Dumpty = "Dumpty" { return "$ setOpacity (range 1 0 $ cos 0.5)" }
+Dumpty = "Dumpty" { return "$ setOpacity (range 1 0 $ sin 0.5)" }
 first = "first"i { return "setPosY (-0.2) $" }
 then = "then"i { return "setPosY (-0.2) $" }
 
-after = "after"i { return "setPosY (range 1 0 $ sin 0.5) $" }
-while = "while"i { return "setPosY (range 1 0 $ tan 0.5) $" }
-//rapidly = "rapidly"i { return "setPosX (-0.5) $" }
+//after = "after"i { return "setPosY (range 0 1 $ sin 0.5) $" }
+while = "while"i { return "setPosY (range 1 0 $ sin 0.5) $" }
+rapidly = "rapidly"i { return "setPosX (-0.5) $" }
 
 
 on = "on"i { return "" }
