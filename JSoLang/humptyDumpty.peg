@@ -16,20 +16,20 @@ while Humpty Dumpty had a grape;
 */
 
 main = x:allRules* { return "##cineCer0\n" + x.join("") }
-allRules = a / wall / before / fall / grass / class /  grape / cake / drank / while / sat / had / humpty / crumpty / sumpty / rapidly /  dumpty / Dumpty / first / then / on / anyCharacter
+allRules = a / wall / my /  before / fall / grass / class /  grape / cake / drank / while / sat / had / humpty / crumpty / sumpty / rapidly /  dumpty / Dumpty / first / then / on / anyCharacter
 anyCharacter = .
 
 //cant use the as it clashes with then
 
 a = "a"i { return "image" }
-//the = "the"i { return "text"} 
+my = "my"i { return "text"} 
 
 wall = "wall"i { return "\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Denslow%27s_Humpty_Dumpty_pg_11.jpg/640px-Denslow%27s_Humpty_Dumpty_pg_11.jpg\"" }
 fall = "fall"i { return "\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Denslow%27s_Humpty_Dumpty_pg_9.jpg/640px-Denslow%27s_Humpty_Dumpty_pg_9.jpg\"" }
 grape = "grape"i { return "\"https://upload.wikimedia.org/wikipedia/commons/6/6c/Abhar-iran.JPG\"" }
 cake = "cake"i { return "\"https://upload.wikimedia.org/wikipedia/commons/0/04/Pound_layer_cake.jpg\"" }
-//grass = "grass"i {return " This is my grass"}
-//class = "class"i {return "Why are you here?"}
+grass = "grass"i {return " This is my grass"}
+class = "class"i {return "Why are you here?"}
 
 sat = "sat"i { return "$" }
 had = "had"i { return "$" }
